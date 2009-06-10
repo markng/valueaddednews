@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/161/tags/1.1.1/src/reversion/templates/reversion
+END
+change_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/161/tags/1.1.1/src/reversion/templates/reversion/change_list.html
+END
+recover_list.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/161/tags/1.1.1/src/reversion/templates/reversion/recover_list.html
+END
+revision_form.html
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/161/tags/1.1.1/src/reversion/templates/reversion/revision_form.html
+END
+object_history.html
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/161/tags/1.1.1/src/reversion/templates/reversion/object_history.html
+END
+recover_form.html
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/161/tags/1.1.1/src/reversion/templates/reversion/recover_form.html
+END
