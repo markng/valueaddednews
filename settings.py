@@ -70,8 +70,14 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.sites',
+    'django.contrib.admin',
     'cms',
     'reversion',
 )
 
 from localsettings import *
+try:
+    INSTALLED_APPS += EXTRA_APPS
+except Exception, e:
+    pass
+
