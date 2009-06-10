@@ -1,1 +1,17 @@
-# Create your views here.
+from models import Page
+from django.http import HttpResponse, HttpResponseRedirect, Http404
+from django.shortcuts import render_to_response
+
+def showpage(request, path='', template_name=None):
+    """docstring for showpage"""
+    try:
+        page = Page.objects.filter(published=True).get(slug=path)
+    except Page.DoesNotExist, e:
+        raise Http404
+    if not template_name:
+        template_name = 'cms/standard.html' # todo - add template field to model and choose from that
+    print page
+    responsed = {}
+    responsed['page'] = page
+    return render_to_response(template_name, responsed)
+    

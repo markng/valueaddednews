@@ -36,4 +36,5 @@ urlpatterns = patterns('',
         'css',
     ),
     (r'^admin/', include(admin.site.urls)),
+    (r'^', include('cms.urls')),
 )
