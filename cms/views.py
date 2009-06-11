@@ -10,7 +10,6 @@ def showpage(request, path='', template_name=None):
         raise Http404
     if not template_name:
         template_name = 'cms/standard.html' # todo - add template field to model and choose from that
-    print page
     responsed = {}
     responsed['page'] = page
     return render_to_response(template_name, responsed)
