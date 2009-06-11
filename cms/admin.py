@@ -1,7 +1,8 @@
 from django.contrib import admin
+from reversion.admin import VersionAdmin
 from models import Page
 
-class PageAdmin(admin.ModelAdmin):
+class PageAdmin(VersionAdmin):
     """Page Admin"""
     pass
 
