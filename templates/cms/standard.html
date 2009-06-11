@@ -1,9 +1,10 @@
 {% extends "base.html" %}
+{% load markup %}
 {% block content %}
   <div class="content">
     <div class="content-cnt">
       <div class="content-main">
-        {{ page.content }}
+        {{ page.content|markdown }}
       </div>
     </div>
   </div>
