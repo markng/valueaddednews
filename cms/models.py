@@ -11,3 +11,7 @@ class Page(models.Model):
     def __unicode__(self):
         """unicode repr"""
         return "%s : ( %s )" % (self.title, self.slug)
+    
+    def get_absolute_url(self):
+        """docstring for get_absolute_url"""
+        return '/%s' % (self.slug)
