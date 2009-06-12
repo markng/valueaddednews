@@ -1,9 +1,10 @@
-{% extends "base.html" %}
+{% extends "breadcrumbs.html" %}
 {% load markup %}
+{% block extrabody %} class="style1"{% endblock %}
 {% block content %}
-  <div class="content">
-    <div class="content-cnt">
-      <div class="content-main">
+  <div class="primary">
+    <div class="primary-cnt">
+      <div class="txt-col">
         {{ page.content|markdown:"codehilite" }}
       </div>
     </div>

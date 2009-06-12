@@ -9,3 +9,20 @@ img, .png {
 	this.runtimeStyle.backgroundImage = "none")),this.pngSet=true)
 );
 }
+
+.sub-nav-top {
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/sub-nav-top.png', sizingmethod='crop');
+}
+.sub-nav-btm {
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/sub-nav-btm.png', sizingmethod='crop');
+}
+.sub-nav-cnt {
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/sub-nav-bg.png', sizingmethod='scale');
+}
+.free {
+	background:none;
+	filter:progid:dximagetransform.microsoft.alphaimageloader(src='images/free-bg.png', sizingmethod='crop');
+}

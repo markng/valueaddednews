@@ -3,12 +3,13 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>ValueAddedNews</title>
-	<link rel="stylesheet" type="text/css" href="css/all.css" />
-	<link rel="stylesheet" type="text/css" href="css/pygments.css" />
+	<link rel="stylesheet" type="text/css" href="/css/all.css" />
+	<link rel="stylesheet" type="text/css" href="/css/pygments.css" />
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-	<!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="css/lt7.css" media="screen"/><![endif]-->
+	<!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="/css/lt7.css" media="screen"/><![endif]-->
+	{% block extrahead %}{% endblock %}
 </head>
-<body>
+<body{% block extrabody %}{% endblock %}>
 	<div class="header">
 		<div class="header-cnt">
 			<div class="header-inn">
@@ -17,8 +18,8 @@
 				<div class="profit">
 					<p>A non-profit initiative OF THE</p>
 					<ul>
-						<li><a href="http://webscience.org/"><img src="images/logo01.gif" alt="WSRI" /></a></li>
-						<li><a href="http://www.mediastandardstrust.org/"><img src="images/logo02.gif" alt="Media Standards Trust" /></a></li>
+						<li><a href="http://webscience.org/"><img src="/images/logo01.gif" alt="WSRI" /></a></li>
+						<li><a href="http://www.mediastandardstrust.org/"><img src="/images/logo02.gif" alt="Media Standards Trust" /></a></li>
 					</ul>
 				</div>
 			</div>
@@ -34,7 +35,7 @@
 			<li><a href="/faq">FAQ</a></li>
 		</ul>
 	</div>
-
+    {% block breadcrumbs %}{% endblock %}
   {% block content %}
     
   {% endblock %}
