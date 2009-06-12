@@ -5,9 +5,11 @@
 			<div class="service-inn2">
 				<div class="service-cnt">
 					<ul class="breadcrumbs">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Benefits</a></li>
-						<li>Protect content</li>
+						<li><a href="{% url home %}">Home</a></li>
+                        {% for ancestor in page.get_ancestors %}
+                        <li><a href="{{ ancestor.get_absolute_url }}">{{ ancestor.title }}</a></li>
+                        {% endfor %}
+                        <li>{{page.title}}</li>
 					</ul>
 					<ul class="serv-list">
 						<li class="print"><a href="#">Print</a></li>
