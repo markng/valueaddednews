@@ -6,6 +6,7 @@ class Page(models.Model):
     title = models.CharField(max_length=255)
     content = models.TextField(null=True, blank=True)
     published = models.BooleanField(default=False)
+    parent = models.ForeignKey('self', null=True, blank=True, related_name='children')
     
     def __unicode__(self):
         """unicode repr"""
