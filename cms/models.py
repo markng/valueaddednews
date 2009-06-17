@@ -33,3 +33,7 @@ class Image(models.Model):
     name = models.CharField(max_length=255, unique=True)
     caption = models.TextField()
     image = models.ImageField(upload_to='images')
+    
+    def __unicode__(self):
+        """string repr"""
+        return self.name
