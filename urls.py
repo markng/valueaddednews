@@ -1,5 +1,7 @@
 from django.conf.urls.defaults import *
 from django.conf import settings
+from django.contrib.auth.decorators import login_required
+from django.views.generic.simple import direct_to_template
 from os import path as os_path
 import os
 
@@ -16,7 +18,7 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     (
         r'^$', 
-        'django.views.generic.simple.direct_to_template', 
+        login_required(direct_to_template), 
         {'template' : 'index.html'}, 
         "home",
     ),
@@ -33,5 +35,6 @@ urlpatterns = patterns('',
         'css',
     ),
     (r'^admin/', include(admin.site.urls)),
+    (r'^accounts/login/$', 'django.contrib.auth.views.login', {'template_name' : 'admin/login.html'}),
     (r'^', include('cms.urls')),
 )
