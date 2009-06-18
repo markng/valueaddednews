@@ -174,14 +174,14 @@ form {
 	color:#06c;
 	font:1.571em Verdana, Arial, Helvetica, sans-serif;
 }
-ul.list {
+ul.list, .txt-col ul {
 	padding:0;
 	margin:0;
 	list-style:none;
 	height:1%;
 	overflow:hidden;
 }
-ul.list li {
+ul.list li, .txt-col ul li {
 	background:url(../images/bullet.gif) no-repeat 0 .4em;
 	padding:0 0 9px 17px;
 }
@@ -673,8 +673,8 @@ ul.serv-list li.login {
 	line-height:1.857em;
 	margin:0 0 25px;
 }
-.txt-col ul.list {padding-bottom:50px;}
-.txt-col ul.list li {
+.txt-col ul {padding-bottom:50px;}
+.txt-col ul li {
 	background:url(../images/bullet02.gif) no-repeat 0 .7em;
 	line-height:1.857em;
 	padding-bottom:0;
