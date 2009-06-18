@@ -1,0 +1,60 @@
+{% extends "breadcrumbs.html" %}
+{% load markup %}
+{% block content %}
+<div class="intro">
+	<div class="intro-inn1">
+		<div class="intro-inn2">
+			<div class="intro-cnt">
+				<h1>{{ page.title }}</h1>
+				<div class="intro-txt">
+					<span class="free">Easy. QUICK &amp; FREE</span>
+					<p>
+						May of the distinguishable features of your news content is invisible to search engines. It doesn’t have to be so.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>			
+</div>
+<div class="watch-box empty">
+	<div class="watch-box-cnt">
+		&nbsp;
+	</div>
+</div>
+<div class="primary">
+  <div class="primary-cnt">
+    <div class="txt-col">
+      {{ page.content|markdown:"codehilite" }}
+    </div>
+    <div class="aside">
+  	<div class="sub-nav">
+  		<div class="sub-nav-top">&nbsp;</div>
+  		<div class="sub-nav-cnt">
+  			<h3>{% if page.parent %}{{ page.parent.title }}{% else %}{{ page.title }}{% endif %}</h3>
+  			<ul>
+  			    {% if page.parent %}
+  			    {% for child in page.parent.children.all %}
+  			    {% ifequal child page %}
+  			    <li class="active"><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
+  			    {% else %}
+  			    <li><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
+  			    {% endifequal %}
+  			    {% endfor %}
+  			    {% else %}
+  			    {% for child in page.children.all %}
+  			    {% ifequal child page %}
+  			    <li class="active"><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
+  			    {% else %}
+  			    <li><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
+  			    {% endifequal %}
+  			    {% endfor %}
+  			    {% endif %}
+  			</ul>
+  		</div>
+  		<div class="sub-nav-btm">&nbsp;</div>
+  	</div>	
+    </div>
+    
+  </div>
+</div>
+{% endblock %}
