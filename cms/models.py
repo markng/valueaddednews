@@ -1,9 +1,15 @@
 from django.db import models
 
+TEMPLATE_CHOICES = (
+    ('cms/standard.html', 'Standard Page'),
+    ('cms/category.html', 'Category Page'),
+)
+
 class Page(models.Model):
     """page object"""
     slug = models.CharField(max_length=255, unique=True, null=True)
     title = models.CharField(max_length=255)
+    template = models.CharField(max_length=255, choices=TEMPLATE_CHOICES, null=True)
     content = models.TextField(null=True, blank=True)
     published = models.BooleanField(default=False)
     parent = models.ForeignKey('self', null=True, blank=True, related_name='children')
@@ -27,6 +33,16 @@ class Page(models.Model):
                 ancestors.append(self.parent)
             ancestors = self.parent.get_ancestors(ancestors=ancestors, reverse=reverse)
         return ancestors
+
+class Block(models.Model):
+    """content block"""
+    name = models.CharField(max_length=255)
+    content = models.TextField(null=True, blank=True)
+    page = models.ForeignKey(Page, related_name='blocks')
+    
+    def __unicode__(self):
+        """string repr"""
+        return self.name
 
 class Image(models.Model):
     """image object"""
