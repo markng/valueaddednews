@@ -1,4 +1,5 @@
 from django.db import models
+import reversion
 
 TEMPLATE_CHOICES = (
     ('cms/standard.html', 'Standard Page'),
@@ -38,11 +39,14 @@ class Block(models.Model):
     """content block"""
     name = models.CharField(max_length=255)
     content = models.TextField(null=True, blank=True)
-    page = models.ForeignKey(Page, related_name='blocks')
+    page = models.ForeignKey(Page, related_name='blocks', blank=True)
     
     def __unicode__(self):
         """string repr"""
         return self.name
+reversion.register(Page, follow=["blocks"])
+reversion.register(Block)
+
 
 class Image(models.Model):
     """image object"""
