@@ -13,7 +13,6 @@ def showpage(request, path='', template_name=None):
             template_name = page.template
         else:
             template_name = 'cms/standard.html'
-    
     responsed = {}
     responsed['page'] = page
     
@@ -22,6 +21,11 @@ def showpage(request, path='', template_name=None):
         responsed['parent'] = page.parent
         responsed['siblings'] = page.parent.children.all()
     responsed['children'] = page.children.all()
+    
+    blocks = {}
+    for block in page.blocks.all():
+        blocks[block.name] = block
+    responsed['blocks'] = blocks
     
     return render_to_response(template_name, responsed)
     
