@@ -9,7 +9,10 @@ def showpage(request, path='', template_name=None):
     except Page.DoesNotExist, e:
         raise Http404
     if not template_name:
-        template_name = 'cms/standard.html' # todo - add template field to model and choose from that
+        if page.template:
+            template_name = page.template
+        else:
+            template_name = 'cms/standard.html'
     
     responsed = {}
     responsed['page'] = page
