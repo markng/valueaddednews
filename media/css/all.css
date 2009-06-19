@@ -20,15 +20,15 @@ form {
 	display:block;
 	width:254px;
 	height:43px;
-	background:url(../images/get-value-added-news.gif) no-repeat;
+	background:url(/images/get-value-added-news.gif) no-repeat;
 	text-indent:-9999px;
 	overflow:hidden;
 }
-.watch-demonstration {background:url(../images/watch-demonstration.gif) no-repeat;}
+.watch-demonstration {background:url(/images/watch-demonstration.gif) no-repeat;}
 .watch-demo {
 	width:181px;
 	position:relative;
-	background:url(../images/watch-demo.gif) no-repeat;
+	background:url(/images/watch-demo.gif) no-repeat;
 	margin:-35px auto 0;
 }
 
@@ -51,10 +51,10 @@ form {
 .header,
 .header-cnt {
 	width:100%;
-	background:#004e9d url(../images/header-bg.gif) repeat-x;
+	background:#004e9d url(/images/header-bg.gif) repeat-x;
 	overflow:hidden;
 }
-.header-cnt {background:url(../images/header-cnt-bg.jpg) no-repeat 50% 0;}
+.header-cnt {background:url(/images/header-cnt-bg.jpg) no-repeat 50% 0;}
 .header-inn {
 	width:820px;
 	margin:0 auto;
@@ -69,7 +69,7 @@ form {
 	width:374px;
 	margin:22px 0 0;
 	height:32px;
-	background:url(../images/logo.gif) no-repeat;
+	background:url(/images/logo.gif) no-repeat;
 }
 .logo a {
 	display:block;
@@ -101,7 +101,7 @@ form {
 .menu {
 	width:100%;
 	overflow:hidden;
-	background:#212121 url(../images/menu-bg.gif) repeat-x;
+	background:#212121 url(/images/menu-bg.gif) repeat-x;
 }
 .menu ul {
 	padding:0 0 0 4px;
@@ -121,17 +121,17 @@ form {
 	padding:0 17px;
 }
 .menu ul li a:hover,
-.menu ul li.active a {background:#424242 url(../images/menu-roll.gif) repeat-x;}
+.menu ul li.active a {background:#424242 url(/images/menu-roll.gif) repeat-x;}
 
 .promo,
 .promo-inn1,
 .promo-inn2 {
 	width:100%;
 	overflow:hidden;
-	background:#bedae9 url(../images/promo-bg.gif) repeat-x;
+	background:#bedae9 url(/images/promo-bg.gif) repeat-x;
 } 
-.promo-inn1 {background:url(../images/promo-inn1.gif) repeat-y 100% 0;}
-.promo-inn2 {background:url(../images/promo-inn2.jpg) no-repeat 100% 0;}
+.promo-inn1 {background:url(/images/promo-inn1.gif) repeat-y 100% 0;}
+.promo-inn2 {background:url(/images/promo-inn2.jpg) no-repeat 100% 0;}
 .promo-cnt {
 	margin:0 auto;
 	width:400px;
@@ -146,17 +146,17 @@ form {
 .watch-box {
 	width:100%;
 	overflow:hidden;
-	background:#fff url(../images/watch-box-bg.gif) repeat-x;
+	background:#fff url(/images/watch-box-bg.gif) repeat-x;
 }
 .watch-box-cnt {
 	margin:0 auto;
 	width:905px;
 	padding:29px 0 25px 19px;
-	background:url(../images/arrows.gif) no-repeat 294px 46px;
+	background:url(/images/arrows.gif) no-repeat 294px 46px;
 }
 
 .content {	
-	background:#e9ebea url(../images/content-bg.gif) repeat-x;
+	background:#e9ebea url(/images/content-bg.gif) repeat-x;
 	width:100%;
 }
 .content-cnt {	
@@ -182,7 +182,7 @@ ul.list, .txt-col ul {
 	overflow:hidden;
 }
 ul.list li, .txt-col ul li {
-	background:url(../images/bullet.gif) no-repeat 0 .4em;
+	background:url(/images/bullet.gif) no-repeat 0 .4em;
 	padding:0 0 9px 17px;
 }
 .btn-box {
@@ -192,7 +192,7 @@ ul.list li, .txt-col ul li {
 }
 .btn-box a {
 	float:left;
-	background:url(../images/btn-bg.gif) no-repeat 100% 0;
+	background:url(/images/btn-bg.gif) no-repeat 100% 0;
 	color:#f60;
 	font:1em/2em Verdana, Arial, Helvetica, sans-serif;
 	padding-right:34px;
@@ -243,7 +243,7 @@ ul.list li, .txt-col ul li {
 	width:100%;
 	overflow:hidden;
 	padding:46px 0 65px;
-	background:#383838 url(../images/links-bg.gif) repeat-x;
+	background:#383838 url(/images/links-bg.gif) repeat-x;
 }
 .links ul {
 	width:904px;
@@ -285,7 +285,7 @@ ul.list li, .txt-col ul li {
 	overflow:hidden;
 	padding:18px 0 20px;
 	color:#fff;
-	background:url(../images/footer-bg.gif) repeat-x;
+	background:url(/images/footer-bg.gif) repeat-x;
 }
 .footer ul {
 	padding:0 0 0 20px;
@@ -297,7 +297,7 @@ ul.list li, .txt-col ul li {
 .footer ul li {
 	float:left;
 	padding:0 18px 0 20px;
-	background:url(../images/separator01.gif) no-repeat 0 .2em;
+	background:url(/images/separator01.gif) no-repeat 0 .2em;
 	margin:0 22px 0 -22px;
 	font-size:.786em;
 	display:inline;
@@ -316,10 +316,10 @@ ul.list li, .txt-col ul li {
 .service-inn2 {
 	width:100%;
 	overflow:hidden;
-	background:#fff url(../images/service-bg.gif) repeat-x;
+	background:#fff url(/images/service-bg.gif) repeat-x;
 }
-.service-inn1 {background:url(../images/service-inn1.gif) repeat-y;}
-.service-inn2 {background:url(../images/service-inn2.jpg) no-repeat;}
+.service-inn1 {background:url(/images/service-inn1.gif) repeat-y;}
+.service-inn2 {background:url(/images/service-inn2.jpg) no-repeat;}
 .service-cnt {
 	width:902px;
 	margin:0 auto;
@@ -336,7 +336,7 @@ ul.breadcrumbs {
 ul.breadcrumbs li {
 	float:left;
 	font:.786em Verdana, Arial, Helvetica, sans-serif;
-	background:url(../images/arrow01.gif) no-repeat 0 4px;
+	background:url(/images/arrow01.gif) no-repeat 0 4px;
 	padding:0 9px 0 16px;
 	margin:0 16px 0 -16px;
 }
@@ -362,15 +362,15 @@ ul.serv-list li {
 	padding-right:23px;
 }
 ul.serv-list li.print {
-	background:url(../images/ico01.gif) no-repeat 0 .2em;
+	background:url(/images/ico01.gif) no-repeat 0 .2em;
 	padding-left:15px;
 }
 ul.serv-list li.sign-up {
-	background:url(../images/ico02.gif) no-repeat 0 .2em;
+	background:url(/images/ico02.gif) no-repeat 0 .2em;
 	padding-left:14px;
 }
 ul.serv-list li.login {
-	background:url(../images/ico03.gif) no-repeat 0 .2em;
+	background:url(/images/ico03.gif) no-repeat 0 .2em;
 	padding-left:14px;
 }
 
@@ -378,14 +378,14 @@ ul.serv-list li.login {
 .intro-inn1,
 .intro-inn2 {
 	width:100%;
-	background:#c9e1ed url(../images/intro-bg.gif) repeat-x;
+	background:#c9e1ed url(/images/intro-bg.gif) repeat-x;
 }
-.intro-inn1 {background:url(../images/intro-inn1.jpg) repeat-y;}
-.intro-inn2 {background:url(../images/intro-inn2.jpg) no-repeat;}
+.intro-inn1 {background:url(/images/intro-inn1.jpg) repeat-y;}
+.intro-inn2 {background:url(/images/intro-inn2.jpg) no-repeat;}
 .intro-cnt {
 	width:630px;
 	margin:0 auto;
-	background:url(../images/line01.jpg) no-repeat;
+	background:url(/images/line01.jpg) no-repeat;
 	padding:27px 294px 0 0;
 }
 .intro-cnt h1 {
@@ -398,7 +398,7 @@ ul.serv-list li.login {
 	float:left;
 	width:159px;
 	height:158px;
-	background:url(../images/free-bg.png) no-repeat;
+	background:url(/images/free-bg.png) no-repeat;
 	display:block;
 	text-indent:-9999px;
 	position:relative;
@@ -420,7 +420,7 @@ ul.serv-list li.login {
 
 .primary {
 	width:100%;
-	background:#fff url(../images/service-bg.gif) repeat-x;
+	background:#fff url(/images/service-bg.gif) repeat-x;
 }
 .primary-cnt {
 	width:884px;
@@ -464,7 +464,7 @@ ul.serv-list li.login {
 .product-box h3 a {
 	float:left;
 	color:#f60;
-	background:url(../images/btn-bg.gif) no-repeat 100% 0;
+	background:url(/images/btn-bg.gif) no-repeat 100% 0;
 	padding-right:39px;
 	text-decoration:none;
 }
@@ -485,14 +485,14 @@ ul.serv-list li.login {
 	width:100%;
 	overflow:hidden;
 	height:5px;
-	background:url(../images/sub-nav-top.png) no-repeat;
+	background:url(/images/sub-nav-top.png) no-repeat;
 }
-.sub-nav-btm {background:url(../images/sub-nav-btm.png) no-repeat;}
+.sub-nav-btm {background:url(/images/sub-nav-btm.png) no-repeat;}
 .sub-nav-cnt {
 	height:1%;
 	padding:0 4px 0 0;
 	overflow:hidden;
-	background:url(../images/sub-nav-bg.png) repeat-y;
+	background:url(/images/sub-nav-bg.png) repeat-y;
 }
 .sub-nav-cnt h4,
 .sub-nav-cnt h3 {
@@ -513,7 +513,7 @@ ul.serv-list li.login {
 	height:1%;
 	overflow:hidden;
 	vertical-align:top;
-	background:url(../images/line02.gif) repeat-x 0 100%;
+	background:url(/images/line02.gif) repeat-x 0 100%;
 }
 .sub-nav-cnt ul li a {
 	padding:10px 10px 8px;
@@ -558,7 +558,7 @@ ul.serv-list li.login {
 	height:73px;
 	overflow:hidden;
 	position:relative;
-	background:url(../images/clients-list-bg.jpg) no-repeat;
+	background:url(/images/clients-list-bg.jpg) no-repeat;
 }
 .clients ul li a {
 	display:block;
@@ -603,9 +603,9 @@ ul.serv-list li.login {
 
 /* picture page */
 
-.style1 .service-inn1 {background:url(../images/service-inn01.gif) repeat-y;}
-.style1 .service-inn2 {background:url(../images/service-inn02.jpg) no-repeat;}
-.style1 .primary-cnt {background:url(../images/line03.gif) no-repeat 640px 0;}
+.style1 .service-inn1 {background:url(/images/service-inn01.gif) repeat-y;}
+.style1 .service-inn2 {background:url(/images/service-inn02.jpg) no-repeat;}
+.style1 .primary-cnt {background:url(/images/line03.gif) no-repeat 640px 0;}
 .main-col,
 .txt-col {
 	float:left;
@@ -643,7 +643,7 @@ ul.serv-list li.login {
 	overflow:hidden
 }
 .img-box {
-	background:#e9ebea url(../images/img-brd-bg.gif) repeat-x 0 100%;
+	background:#e9ebea url(/images/img-brd-bg.gif) repeat-x 0 100%;
 	padding:4px 0 30px;
 }
 .img-box img {
@@ -675,7 +675,7 @@ ul.serv-list li.login {
 }
 .txt-col ul {padding-bottom:50px;}
 .txt-col ul li {
-	background:url(../images/bullet02.gif) no-repeat 0 .7em;
+	background:url(/images/bullet02.gif) no-repeat 0 .7em;
 	line-height:1.857em;
 	padding-bottom:0;
 }
@@ -697,24 +697,24 @@ ul.serv-list li.login {
 }
 .code-title {
 	padding:10px 20px 12px 17px;
-	background:#fbfbfb url(../images/code-title-bg.gif) repeat-x 0 100%;
+	background:#fbfbfb url(/images/code-title-bg.gif) repeat-x 0 100%;
 	text-transform:uppercase;
 	font:.786em/1.545em Verdana, Arial, Helvetica, sans-serif;
 }
 .code-title p {margin:0;}
 .code-title a {
 	float:right;
-	background:url(../images/btn-bg2.gif) no-repeat 100% 0;
+	background:url(/images/btn-bg2.gif) no-repeat 100% 0;
 	padding-right:27px;
 	color:#f60;
 	text-decoration:none;
 }
 .code-title a:hover {text-decoration:underline;}
-.code-cnt {
+.code-cnt, .codehilite, .code code {
 	height:1%;
 	padding:20px 22px 30px;
 }
-.code code {
+.code code{
 	font:.929em Monaco, "Courier New", Courier, monospace;
 	height:1%;
 	display:block;
@@ -726,11 +726,11 @@ ul.serv-list li.login {
 .who-btm {
 	width:100%;
 	overflow:hidden;
-	background:url(../images/who-bg.jpg) repeat-y;
+	background:url(/images/who-bg.jpg) repeat-y;
 }
-.who-top {background:url(../images/who-top.jpg) no-repeat;}
+.who-top {background:url(/images/who-top.jpg) no-repeat;}
 .who-btm {
-	background:url(../images/who-btm.jpg) no-repeat 0 100%;
+	background:url(/images/who-btm.jpg) no-repeat 0 100%;
 	min-height:429px;
 }
 * html .who-btm {
