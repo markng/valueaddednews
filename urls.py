@@ -41,6 +41,12 @@ urlpatterns = patterns('',
         'images',
     ),
     (
+        r'^js/(.*)$', 
+        'django.views.static.serve', 
+        {'document_root': os_path.join(settings.PROJECT_PATH, 'media/js')}, 
+        'js',
+    ),
+    (
         r'^uploads/(.*)$', 
         'django.views.static.serve', 
         {'document_root': os_path.join(settings.PROJECT_PATH, 'media/uploads')}, 
