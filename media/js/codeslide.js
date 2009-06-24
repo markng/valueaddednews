@@ -20,7 +20,6 @@ $(document).ready(function() {
 		.children('a')
 		.click(function() {
 			var thislink = $(this);
-			console.log(thislink);
 			if (thislink.hasClass('next')) {
 				var ggparent = thislink.parent().parent().parent();
 				var gguncle = thislink.parent().parent().parent().next();
