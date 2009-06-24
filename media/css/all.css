@@ -709,8 +709,18 @@ ul.serv-list li.login {
 	color:#f60;
 	text-decoration:none;
 }
+.code-slide div.code-title p {
+	margin: 0;
+	width: 521px;
+	float: left;
+}
+.code-slide div.code-title div.code-selector a {
+	background: none;
+	float: none;
+	padding-right: 5px;
+}
 .code-title a:hover {text-decoration:underline;}
-.code-cnt, .codehilite, .code code {
+.code-cnt{
 	height:1%;
 	padding:20px 22px 30px;
 }

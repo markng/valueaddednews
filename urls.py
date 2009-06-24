@@ -14,7 +14,7 @@ urlpatterns = patterns('',
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
     # to INSTALLED_APPS to enable admin documentation:
     (r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
+    
     # Uncomment the next line to enable the admin:
     (
         r'^$', 
@@ -52,6 +52,7 @@ urlpatterns = patterns('',
         {'document_root': os_path.join(settings.PROJECT_PATH, 'media/uploads')}, 
         'uploads',
     ),
+    (r'^howto/example/1$', 'django.views.generic.simple.direct_to_template', {'template' : 'how_to_1.html'}),
     (r'^admin/', include(admin.site.urls)),
     (r'^accounts/login/$', 'django.contrib.auth.views.login', {'template_name' : 'admin/login.html'}),
     (r'^', include('cms.urls')),

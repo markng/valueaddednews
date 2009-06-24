@@ -1,0 +1,168 @@
+{% extends "cms/standard.html" %}
+{% block content %}
+<div class="primary">
+  <div class="primary-cnt">
+    <div class="txt-col">
+        <div class="code">
+            <div class="code-slide">
+                <div class="code-title">
+                    <p>A typical news story</p>
+                </div>
+                        
+                <code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;header&quot;</span><span class="nt">&gt;</span>
+                <br />  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/&quot;</span><span class="nt">&gt;</span>The Daily News<span class="nt">&lt;/a&gt;</span>
+                <br /><span class="nt">&lt;/div&gt;</span>
+                <br /><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;story&quot;</span><span class="nt">&gt;</span>
+                <br />  <span class="nt">&lt;h1&gt;</span>New investigation into Indian Plane Crash<span class="nt">&lt;/h1&gt;</span>
+                <br />  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;by&quot;</span><span class="nt">&gt;</span>By John Smith in Mumbai<span class="nt">&lt;/p&gt;</span>
+                <br />  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;at&quot;</span><span class="nt">&gt;</span>Published: 9.02am BST 15 Jun 2009<span class="nt">&lt;/p&gt;</span>
+                <br />
+                <br />  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;figure&quot;</span><span class="nt">&gt;</span>
+                <br />    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;20090519_plane.jpg&quot;</span> <span class="na">alt=</span><span class="s">&quot;Plane&quot;</span> <span class="nt">/&gt;</span>
+                <br />    <span class="nt">&lt;p&gt;</span>The runway at Sydney airport where the airplane was due to land. Photo: ADI<span class="nt">&lt;/p&gt;</span>
+                <br />  <span class="nt">&lt;/div&gt;</span>
+                <br />  <span class="nt">&lt;div&gt;</span>
+                <br />    <span class="nt">&lt;p&gt;</span>A new investigation has been launched into the plane crash in Mumbai earlier this year.<span class="nt">&lt;/p&gt;</span>
+                <br />    <span class="nt">&lt;p&gt;</span>Questions were asked after the Skyline flight, which took off from Paris bound for Sydney on April 22nd, took an unscheduled detour over India.<span class="nt">&lt;/p&gt;</span>
+                <br />    <span class="nt">&lt;p&gt;</span>Three hours into the second leg of the flight, at 12.30 Mumbai time, the pilot changed course.<span class="nt">&lt;/p&gt;</span>
+                <br />    <span class="nt">&lt;p&gt;</span>Tom Reynolds, a spokesman for Skyline, said the company did not know why the flight veered off its usual route.<span class="nt">&lt;/p&gt;</span>
+                <br />    <span class="nt">&lt;p&gt;</span><span class="ni">&amp;quot;</span>Pilots do not generally behave unpredictably<span class="ni">&amp;quot;</span>, Reynolds told XYZ News, <span class="ni">&amp;quot;</span>so it is very difficult for us to understand what happened to the B330 flight.<span class="ni">&amp;quot;</span><span class="nt">&lt;/p&gt;</span>
+                <br />    <span class="nt">&lt;p&gt;</span>Jonathan Thompson, a civil aviation expert, thinks there is reason to believe the plane was hijacked.<span class="nt">&lt;/p&gt;</span>    
+                <br />  <span class="nt">&lt;/div&gt;</span>
+                <br />  <span class="nt">&lt;p&gt;</span><span class="ni">&amp;copy;</span>2009 The Daily News.<span class="nt">&lt;/p&gt;</span>
+                <br /><span class="nt">&lt;/div&gt;</span>
+                <br /></code>
+            </div>
+        <div class="code-slide">
+            <div class="code-title">
+            <p>Adding hAtom classes and dates  (level 1)</p>
+            </div>
+            
+            <code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;header&quot;</span><span class="nt">&gt;</span>
+            <br />  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/&quot;</span><span class="nt">&gt;</span>The Daily News<span class="nt">&lt;/a&gt;</span>
+            <br /><span class="nt">&lt;/div&gt;</span>
+            <br /><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;story hentry&quot;</span><span class="nt">&gt;</span>
+            <br />  <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;entry-title&quot;</span><span class="nt">&gt;</span>New investigation into Indian Plane Crash<span class="nt">&lt;/h1&gt;</span>
+            <br />  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;author vcard&quot;</span><span class="nt">&gt;</span>By <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fn&quot;</span><span class="nt">&gt;</span>John Smith<span class="nt">&lt;/span&gt;</span> in <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;locality&quot;</span><span class="nt">&gt;</span>Mumbai<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+            <br />  <span class="nt">&lt;p&gt;</span>Published: <span class="nt">&lt;abbr</span> <span class="na">class=</span><span class="s">&quot;published updated&quot;</span> <span class="na">title=</span><span class="s">&quot;2009-05-15T09:02:00+0100&quot;</span><span class="nt">&gt;</span>9.02am BST 15 Jun 2009<span class="nt">&lt;/abbr&gt;&lt;/p&gt;</span>
+            <br />
+            <br />  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;figure&quot;</span><span class="nt">&gt;</span>
+            <br />    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;20090519_plane.jpg&quot;</span> <span class="na">alt=</span><span class="s">&quot;Plane&quot;</span> <span class="nt">/&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>The runway at Sydney airport where the airplane was due to land. Photo: ADI<span class="nt">&lt;/p&gt;</span>
+            <br />  <span class="nt">&lt;/div&gt;</span>
+            <br />  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;entry-content&quot;</span><span class="nt">&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>A new investigation has been launched into the plane crash in Mumbai earlier this year.<span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>Questions were asked after the Skyline flight, which took off from Paris bound for Sydney on April 22nd, took an unscheduled detour over India.<span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>Three hours into the second leg of the flight, at 12.30 Mumbai time, the pilot changed course.<span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>Tom Reynolds, a spokesman for Skyline, said the company did not know why the flight veered off its usual route.<span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span><span class="ni">&amp;quot;</span>Pilots do not generally behave unpredictably<span class="ni">&amp;quot;</span>, Reynolds told XYZ News, <span class="ni">&amp;quot;</span>so it is very difficult for us to understand what happened to the B330 flight.<span class="ni">&amp;quot;</span><span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>Jonathan Thompson, a civil aviation expert, thinks there is reason to believe the plane was hijacked.<span class="nt">&lt;/p&gt;</span>    
+            <br />  <span class="nt">&lt;/div&gt;</span>
+            <br />  <span class="nt">&lt;p&gt;</span><span class="ni">&amp;copy;</span>2009 The Daily News.<span class="nt">&lt;/p&gt;</span>
+            <br /><span class="nt">&lt;/div&gt;</span>
+            <br /></code>
+        </div>
+        <div class="code-slide">
+            <div class="code-title">
+                <p>Alternative dates for date time pattern accessibility concerns (level 1)</p>                
+            </div>
+            <code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;header&quot;</span><span class="nt">&gt;</span>
+            <br />  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/&quot;</span><span class="nt">&gt;</span>The Daily News<span class="nt">&lt;/a&gt;</span>
+            <br /><span class="nt">&lt;/div&gt;</span>
+            <br /><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;story hentry&quot;</span><span class="nt">&gt;</span>
+            <br />  <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;entry-title&quot;</span><span class="nt">&gt;</span>New investigation into Indian Plane Crash<span class="nt">&lt;/h1&gt;</span>
+            <br />  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;author vcard&quot;</span><span class="nt">&gt;</span>By <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fn&quot;</span><span class="nt">&gt;</span>John Smith<span class="nt">&lt;/span&gt;</span> in <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;locality&quot;</span><span class="nt">&gt;</span>Mumbai<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+            <br />  <span class="nt">&lt;p&gt;</span>Published: <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;published updated&quot;</span><span class="nt">&gt;&lt;abbr</span> <span class="na">class=</span><span class="s">&quot;value&quot;</span> <span class="na">title=</span><span class="s">&quot;09:02:00+0100&quot;</span><span class="nt">&gt;</span>9.02am BST<span class="nt">&lt;/abbr&gt;</span> <span class="nt">&lt;abbr</span> <span class="na">class=</span><span class="s">&quot;value&quot;</span> <span class="na">title=</span><span class="s">&quot;2009-05-15&quot;</span><span class="nt">&gt;</span>15 Jun 2009<span class="nt">&lt;/abbr&gt;&lt;/span&gt;&lt;/p&gt;</span>
+            <br />
+            <br />  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;figure&quot;</span><span class="nt">&gt;</span>
+            <br />    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;20090519_plane.jpg&quot;</span> <span class="na">alt=</span><span class="s">&quot;Plane&quot;</span> <span class="nt">/&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>The runway at Sydney airport where the airplane was due to land. Photo: ADI<span class="nt">&lt;/p&gt;</span>
+            <br />  <span class="nt">&lt;/div&gt;</span>
+            <br />  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;entry-content&quot;</span><span class="nt">&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>A new investigation has been launched into the plane crash in Mumbai earlier this year.<span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>Questions were asked after the Skyline flight, which took off from Paris bound for Sydney on April 22nd, took an unscheduled detour over India.<span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>Three hours into the second leg of the flight, at 12.30 Mumbai time, the pilot changed course.<span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>Tom Reynolds, a spokesman for Skyline, said the company did not know why the flight veered off its usual route.<span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span><span class="ni">&amp;quot;</span>Pilots do not generally behave unpredictably<span class="ni">&amp;quot;</span>, Reynolds told XYZ News, <span class="ni">&amp;quot;</span>so it is very difficult for us to understand what happened to the B330 flight.<span class="ni">&amp;quot;</span><span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>Jonathan Thompson, a civil aviation expert, thinks there is reason to believe the plane was hijacked.<span class="nt">&lt;/p&gt;</span>    
+            <br />  <span class="nt">&lt;/div&gt;</span>
+            <br />  <span class="nt">&lt;p&gt;</span><span class="ni">&amp;copy;</span>2009 The Daily News.<span class="nt">&lt;/p&gt;</span>
+            <br /><span class="nt">&lt;/div&gt;</span>
+            <br /></code>
+
+            
+        </div>
+        <div class="code-slide">
+            <div class="code-title">
+              <p>Add extra fields identifying work specifically as news (level 2) (in this case, the dateline is the same as author, but not always the case)</p>  
+            </div>
+            <code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;header&quot;</span><span class="nt">&gt;</span>
+            <br />  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;source-org vcard&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">&quot;fn org url&quot;</span> <span class="na">href=</span><span class="s">&quot;/&quot;</span><span class="nt">&gt;</span>The Daily News<span class="nt">&lt;/a&gt;&lt;/span&gt;</span>
+            <br /><span class="nt">&lt;/div&gt;</span>
+            <br /><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;story hentry&quot;</span><span class="nt">&gt;</span>
+            <br />  <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;entry-title&quot;</span><span class="nt">&gt;</span>New investigation into Indian Plane Crash<span class="nt">&lt;/h1&gt;</span>
+            <br />  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;author dateline vcard&quot;</span><span class="nt">&gt;</span>By <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fn&quot;</span><span class="nt">&gt;</span>John Smith<span class="nt">&lt;/span&gt;</span> in <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;locality&quot;</span><span class="nt">&gt;</span>Mumbai<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+            <br />  <span class="nt">&lt;p&gt;</span>Published: <span class="nt">&lt;abbr</span> <span class="na">class=</span><span class="s">&quot;published updated&quot;</span> <span class="na">title=</span><span class="s">&quot;2009-05-15T09:02:00+0100&quot;</span><span class="nt">&gt;</span>9.02am BST 15 Jun 2009<span class="nt">&lt;/abbr&gt;&lt;/p&gt;</span>
+            <br />
+            <br />  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;figure&quot;</span><span class="nt">&gt;</span>
+            <br />    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;20090519_plane.jpg&quot;</span> <span class="na">alt=</span><span class="s">&quot;Plane&quot;</span> <span class="nt">/&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>The runway at Sydney airport where the airplane was due to land. Photo: ADI<span class="nt">&lt;/p&gt;</span>
+            <br />  <span class="nt">&lt;/div&gt;</span>
+            <br />  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;entry-content&quot;</span><span class="nt">&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>A new investigation has been launched into the plane crash in Mumbai earlier this year.<span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>Questions were asked after the Skyline flight, which took off from Paris bound for Sydney on April 22nd, took an unscheduled detour over India.<span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>Three hours into the second leg of the flight, at 12.30 Mumbai time, the pilot changed course.<span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>Tom Reynolds, a spokesman for Skyline, said the company did not know why the flight veered off its usual route.<span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span><span class="ni">&amp;quot;</span>Pilots do not generally behave unpredictably<span class="ni">&amp;quot;</span>, Reynolds told XYZ News, <span class="ni">&amp;quot;</span>so it is very difficult for us to understand what happened to the B330 flight.<span class="ni">&amp;quot;</span><span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>Jonathan Thompson, a civil aviation expert, thinks there is reason to believe the plane was hijacked.<span class="nt">&lt;/p&gt;</span>    
+            <br />  <span class="nt">&lt;/div&gt;</span>
+            <br />  <span class="nt">&lt;p&gt;</span>This article conforms to the <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/principles&quot;</span> <span class="na">rel=</span><span class="s">&quot;principles&quot;</span><span class="nt">&gt;</span>Daily News news principles<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+            <br />  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;hrights&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;copy;</span>2009 <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;cclegalcode&quot;</span> <span class="na">href=</span><span class="s">&quot;/copyright_statement&quot;</span><span class="nt">&gt;</span>The Daily News<span class="nt">&lt;/a&gt;</span>. All rights reserved.<span class="nt">&lt;/p&gt;</span>
+            <br /><span class="nt">&lt;/div&gt;</span>
+            <br /></code>
+        </div>
+        <div class="code-slide">
+            <div class="code-title">
+              <p>mark up people, events and organisations in your stories using hcard and hcal (level 3)</p>  
+            </div>
+            <code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;header&quot;</span><span class="nt">&gt;</span>
+            <br />  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;source-org vcard&quot;</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">&quot;fn org url&quot;</span> <span class="na">href=</span><span class="s">&quot;/&quot;</span><span class="nt">&gt;</span>The Daily News<span class="nt">&lt;/a&gt;&lt;/span&gt;</span>
+            <br /><span class="nt">&lt;/div&gt;</span>
+            <br /><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;story hentry&quot;</span><span class="nt">&gt;</span>
+            <br />  <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;entry-title&quot;</span><span class="nt">&gt;</span>New investigation into Indian Plane Crash<span class="nt">&lt;/h1&gt;</span>
+            <br />  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;author dateline vcard&quot;</span><span class="nt">&gt;</span>By <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;fn&quot;</span><span class="nt">&gt;</span>John Smith<span class="nt">&lt;/span&gt;</span> in <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;locality&quot;</span><span class="nt">&gt;</span>Mumbai<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+            <br />  <span class="nt">&lt;p&gt;</span>Published: <span class="nt">&lt;abbr</span> <span class="na">class=</span><span class="s">&quot;published updated&quot;</span> <span class="na">title=</span><span class="s">&quot;2009-05-15T09:02:00+0100&quot;</span><span class="nt">&gt;</span>9.02am BST 15 Jun 2009<span class="nt">&lt;/abbr&gt;&lt;/p&gt;</span>
+            <br />
+            <br />  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;figure&quot;</span><span class="nt">&gt;</span>
+            <br />    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;20090519_plane.jpg&quot;</span> <span class="na">alt=</span><span class="s">&quot;Plane&quot;</span> <span class="nt">/&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>The runway at Sydney airport where the airplane was due to land. Photo: ADI<span class="nt">&lt;/p&gt;</span>
+            <br />  <span class="nt">&lt;/div&gt;</span>
+            <br />  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;entry-content&quot;</span><span class="nt">&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>A new investigation has been launched into the plane crash in Mumbai earlier this year.<span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>Questions were asked after the <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;vevent&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;summary&quot;</span><span class="nt">&gt;</span>Skyline flight, which took off from <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;location&quot;</span><span class="nt">&gt;</span>Paris<span class="nt">&lt;/span&gt;&lt;/span&gt;</span> bound for Sydney on <span class="nt">&lt;abbr</span> <span class="na">class=</span><span class="s">&quot;dtstart&quot;</span> <span class="na">title=</span><span class="s">&quot;2009-04-22&quot;</span><span class="nt">&gt;</span>April 22nd<span class="nt">&lt;/abbr&gt;&lt;/span&gt;</span>, took an unscheduled detour over India.<span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>Three hours into the second leg of the flight, at 12.30 Mumbai time, the pilot changed course.<span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;vcard&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;fn&quot;</span><span class="nt">&gt;</span>Tom Reynolds<span class="nt">&lt;/span&gt;</span>, a <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;role&quot;</span><span class="nt">&gt;</span>spokesman<span class="nt">&lt;/span&gt;</span> for <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;org&quot;</span><span class="nt">&gt;</span>Skyline<span class="nt">&lt;/span&gt;&lt;/span&gt;</span>, said the company did not know why the flight veered off its usual route.<span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span><span class="ni">&amp;quot;</span>Pilots do not generally behave unpredictably<span class="ni">&amp;quot;</span>, Reynolds told XYZ News, <span class="ni">&amp;quot;</span>so it is very difficult for us to understand what happened to the B330 flight.<span class="ni">&amp;quot;</span><span class="nt">&lt;/p&gt;</span>
+            <br />    <span class="nt">&lt;p&gt;</span>Jonathan Thompson, a civil aviation expert, thinks there is reason to believe the plane was hijacked.<span class="nt">&lt;/p&gt;</span>    
+            <br />  <span class="nt">&lt;/div&gt;</span>
+            <br />  <span class="nt">&lt;p&gt;</span>This article conforms to the <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/principles&quot;</span> <span class="na">rel=</span><span class="s">&quot;principles&quot;</span><span class="nt">&gt;</span>Daily News news principles<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+            <br />  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;hrights&quot;</span><span class="nt">&gt;</span><span class="ni">&amp;copy;</span>2009 <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;cclegalcode&quot;</span> <span class="na">href=</span><span class="s">&quot;/copyright_statement&quot;</span><span class="nt">&gt;</span>The Daily News<span class="nt">&lt;/a&gt;</span>. All rights reserved.<span class="nt">&lt;/p&gt;</span>
+            <br /><span class="nt">&lt;/div&gt;</span>
+            <br /></code>            
+        </div>
+        </div>
+    </div>
+    <div class="aside">
+  	<div class="sub-nav">
+  		<div class="sub-nav-top">&nbsp;</div>
+  		<div class="sub-nav-cnt">
+  		</div>
+  		<div class="sub-nav-btm">&nbsp;</div>
+  	</div>	
+    </div>
+    
+  </div>
+</div>
+
+
+{% endblock %}
