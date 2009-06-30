@@ -3,5 +3,5 @@ from django.contrib.auth.decorators import login_required
 from cms.views import showpage
 
 urlpatterns = patterns('',
-    (r'^(?P<path>.*)$', login_required(showpage), {}, "showcmspage"),
+    (r'^(?P<path>.*)$', showpage, {}, "showcmspage"),
 )
