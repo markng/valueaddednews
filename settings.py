@@ -2,9 +2,6 @@ import os
 from os import path as os_path
 PROJECT_PATH = os_path.abspath(os_path.split(__file__)[0])
 
-DEBUG = True
-TEMPLATE_DEBUG = DEBUG
-
 ADMINS = (
     # ('Your Name', 'your_email@domain.com'),
 )
