@@ -78,6 +78,7 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
     'cms',
     'reversion',
+    'groups',
 )
 
 from localsettings import *

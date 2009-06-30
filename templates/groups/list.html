@@ -1,0 +1,63 @@
+{% extends "cms/category.html" %}
+{% load date_tags %}
+{% block content %}
+    <div class="intro">
+    	<div class="intro-inn1">
+    		<div class="intro-inn2">
+    			<div class="intro-cnt">
+    				<h1>Forum</h1>
+    				<div class="intro-txt">
+    					<span class="free">Easy. QUICK &amp; FREE</span>
+    					<p>Join the conversation - get help adding semantic value to your news, or help change the way that news organisations make their content available online.</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>			
+    </div>
+    <div class="watch-box empty">
+    	<div class="watch-box-cnt">
+    		&nbsp;
+    	</div>
+    </div>
+    <div class="primary">
+      <div class="primary-cnt">
+        <div class="txt-col">
+          {% for message in messages %}
+            <h2><a href="{{ message.link }}">{{ message.title }}</a></h2>
+            <p>by {{ message.author_detail.name }} on {{ message.updated_parsed|fptupletodatetime|date:"j F" }} at {{ message.updated_parsed|fptupletodatetime|date:"H:i" }}</p>
+            <p>{{ message.summary }}</p>
+          {% endfor %}
+        </div>
+        <div class="aside">
+      	<div class="sub-nav">
+      		<div class="sub-nav-top">&nbsp;</div>
+      		<div class="sub-nav-cnt">
+      			<h3>Forum</h3>
+      			<ul>
+      			    {% if page.parent %}
+      			    {% for child in page.parent.children.all %}
+      			    {% ifequal child page %}
+      			    <li class="active"><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
+      			    {% else %}
+      			    <li><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
+      			    {% endifequal %}
+      			    {% endfor %}
+      			    {% else %}
+      			    {% for child in page.children.all %}
+      			    {% ifequal child page %}
+      			    <li class="active"><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
+      			    {% else %}
+      			    <li><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
+      			    {% endifequal %}
+      			    {% endfor %}
+      			    {% endif %}
+      			</ul>
+      		</div>
+      		<div class="sub-nav-btm">&nbsp;</div>
+      	</div>	
+        </div>
+
+      </div>
+    </div>
+    
+{% endblock %}
