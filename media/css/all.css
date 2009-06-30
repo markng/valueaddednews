@@ -687,7 +687,7 @@ ul.serv-list li.login {
 }
 .code {
 	position:relative;
-	margin:-15px 0 0;
+	margin:-15px 0 15px;
 }
 .code,
 .code-title {
@@ -698,14 +698,10 @@ ul.serv-list li.login {
 .code-title {
 	padding:10px 20px 12px 17px;
 	background:#fbfbfb url(/images/code-title-bg.gif) repeat-x 0 100%;
-	text-transform:uppercase;
 	font:.786em/1.545em Verdana, Arial, Helvetica, sans-serif;
 }
 .code-title p {margin:0;}
 .code-title a {
-	float:right;
-	background:url(/images/btn-bg2.gif) no-repeat 100% 0;
-	padding-right:27px;
 	color:#f60;
 	text-decoration:none;
 }
@@ -718,6 +714,10 @@ ul.serv-list li.login {
 	background: none;
 	float: none;
 	padding-right: 5px;
+}
+div.code-selector a {
+	font-size: 1.2em;
+	font-weight: bold;
 }
 .code-title a:hover {text-decoration:underline;}
 .code-cnt{
