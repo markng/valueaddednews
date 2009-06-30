@@ -24,7 +24,6 @@
         <div class="txt-col">
             <p>Value Added News is unfinished - on purpose. The technical specifications are in draft. We plan to continue to develop it based on feedback and based on the experiences of those who integrate it and try it.</p>
             <p>Tell us how we might improve it. Suggest additions to the current format. Ask questions about how to integrate it.</p>
-            <p>Then hopefully we'll end up a big step forward from from where we are now.</p>
           {% for message in messages %}
             {% ifequal message.title "Test topic"  %}
                 
@@ -41,23 +40,12 @@
       		<div class="sub-nav-cnt">
       			<h3>Forum</h3>
       			<ul>
-      			    {% if page.parent %}
-      			    {% for child in page.parent.children.all %}
-      			    {% ifequal child page %}
-      			    <li class="active"><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
-      			    {% else %}
-      			    <li><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
-      			    {% endifequal %}
+      			    {% for message in messages %}
+      			       {% ifequal message.title "Test topic"  %}
+      			       {% else %}
+                       <li><a href="{{ message.link }}">{{ message.title }}</a></li>
+      			       {% endifequal %}
       			    {% endfor %}
-      			    {% else %}
-      			    {% for child in page.children.all %}
-      			    {% ifequal child page %}
-      			    <li class="active"><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
-      			    {% else %}
-      			    <li><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
-      			    {% endifequal %}
-      			    {% endfor %}
-      			    {% endif %}
       			</ul>
       		</div>
       		<div class="sub-nav-btm">&nbsp;</div>
