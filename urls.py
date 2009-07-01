@@ -12,12 +12,12 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     (r'^admin/doc/', include('django.contrib.admindocs.urls')),
-    (r'^$', 'django.views.generic.simple.direct_to_template', {'template' : 'construction.html'}, "home"),
+    #(r'^$', 'django.views.generic.simple.direct_to_template', {'template' : 'construction.html'}, "home"),
     (
-        r'^new$', 
-        login_required(direct_to_template), 
+        r'^$', 
+        direct_to_template, 
         {'template' : 'index.html'}, 
-        "home2",
+        "home",
     ),
     (
         r'^images/(.*)$', 
