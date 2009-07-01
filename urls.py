@@ -56,3 +56,5 @@ urlpatterns = patterns('',
     (r'^accounts/login/$', 'django.contrib.auth.views.login', {'template_name' : 'admin/login.html'}),
     (r'^', include('cms.urls')),
 )
+handler404 = 'cms.views.missingpage'
+
