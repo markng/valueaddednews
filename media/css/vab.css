@@ -1,0 +1,50 @@
+/* CSS for Value Added Label widget */
+
+.vab-container {
+    position: relative;
+    display: inline-block;  /* needed to prevent safari clipping bug */
+}
+
+.vab-popup {
+	display: none;
+	border: 1px solid #CCCCCC;
+	position: absolute;
+    left: 20px;
+    top: 0;
+    width: 30em;
+	background-color: white;
+	padding: 0;
+	margin-left: 0px;
+	overflow: hidden;
+    font-family: sans-serif;
+ }
+
+.vab-header {
+    display: block;
+    color: #FFFFFF;
+    background-color: #0856A1;
+    padding: 0.2em;
+    margin: 0;
+    font-size: larger;
+}
+
+.vab-body {
+    padding: 0.5em;
+    font-size: smaller;
+}
+
+
+.vab-name {
+    vertical-align: top;
+    padding: 0.1em;
+}
+
+.vab-value {
+    vertical-align: top;
+    padding: 0.1em;
+}
+
+.vab-odd .vab-value {
+    background-color: #EEEEEE;
+}
+
