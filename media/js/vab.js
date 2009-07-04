@@ -338,10 +338,12 @@ var HNews = Microformat.define('hentry', {
     }
 
     // look for statement-of-principles
+    // TODO: uF parser has no built-in support for rel-blah patterns... should add
+    // it properly rather than special casing it like this!
     var links = node.getElementsByTagName("a");
     for (var i = 0; i<links.length; ++i) {
         if( links[i].getAttribute('rel') == 'principles' ) {
-            data.principles = links[i].href;
+            data.principles = { url: links[i].href, name: links[i].innerHTML };
         }
     }
   }
@@ -440,7 +442,7 @@ renderIngredients: function( story ) {
     }
     out = out + VAB.fmtRow( 'Last updated:', story.updated.toLocaleString() );
     if( story.principles ) {
-        out = out + VAB.fmtRow( 'Statement of principles', story.principles.link( story.principles ) );
+        out = out + VAB.fmtRow( 'Statement of principles:', story.principles.name.link( story.principles.url ) );
     }
 
     out = out + '</table>\n';
