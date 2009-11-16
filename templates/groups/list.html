@@ -2,22 +2,22 @@
 {% load date_tags %}
 {% block content %}
     <div class="intro">
-    	<div class="intro-inn1">
-    		<div class="intro-inn2">
-    			<div class="intro-cnt">
-    				<h1>Forum</h1>
-    				<div class="intro-txt">
-    					<span class="free">Easy. QUICK &amp; FREE</span>
-    					<p>Join the conversation - discuss Value Added News beta and get help adding semantic value to your news</p>
-    				</div>
-    			</div>
-    		</div>
-    	</div>			
+      <div class="intro-inn1">
+        <div class="intro-inn2">
+          <div class="intro-cnt">
+            <h1>Forum</h1>
+            <div class="intro-txt">
+              <span class="free">Easy. QUICK &amp; FREE</span>
+              <p>Join the conversation - discuss Value Added News beta and get help adding semantic value to your news</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="watch-box empty">
-    	<div class="watch-box-cnt">
-    		&nbsp;
-    	</div>
+      <div class="watch-box-cnt">
+        &nbsp;
+      </div>
     </div>
     <div class="primary">
       <div class="primary-cnt">
@@ -26,33 +26,33 @@
             <p><a href="http://groups.google.com/group/valueaddednews">Join our google group</a> - Tell us how we might improve it. Suggest additions to the current format. Ask questions about how to integrate it.</p>
           {% for message in messages %}
             {% ifequal message.title "Test topic"  %}
-                
+
             {% else %}
             <h2><a href="{{ message.link }}">{{ message.title }}</a></h2>
             <p>by {{ message.author_detail.name }} on {{ message.updated_parsed|fptupletodatetime|date:"j F" }} at {{ message.updated_parsed|fptupletodatetime|date:"H:i" }}</p>
-            <p>{{ message.summary }}</p>
+            <p>{{ message.summary|safe }}</p>
             {% endifequal %}
           {% endfor %}
         </div>
         <div class="aside">
-      	<div class="sub-nav">
-      		<div class="sub-nav-top">&nbsp;</div>
-      		<div class="sub-nav-cnt">
-      			<h3>Forum</h3>
-      			<ul>
-      			    {% for message in messages %}
-      			       {% ifequal message.title "Test topic"  %}
-      			       {% else %}
+        <div class="sub-nav">
+          <div class="sub-nav-top">&nbsp;</div>
+          <div class="sub-nav-cnt">
+            <h3>Forum</h3>
+            <ul>
+                {% for message in messages %}
+                   {% ifequal message.title "Test topic"  %}
+                   {% else %}
                        <li><a href="{{ message.link }}">{{ message.title }}</a></li>
-      			       {% endifequal %}
-      			    {% endfor %}
-      			</ul>
-      		</div>
-      		<div class="sub-nav-btm">&nbsp;</div>
-      	</div>	
+                   {% endifequal %}
+                {% endfor %}
+            </ul>
+          </div>
+          <div class="sub-nav-btm">&nbsp;</div>
+        </div>
         </div>
 
       </div>
     </div>
-    
+
 {% endblock %}
