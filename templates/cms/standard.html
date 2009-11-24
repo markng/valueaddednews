@@ -12,34 +12,36 @@
         {{ page.content|markdown:"vancodehilite" }}
       </div>
       <div class="aside">
-    	<div class="sub-nav">
-    		<div class="sub-nav-top">&nbsp;</div>
-    		<div class="sub-nav-cnt">
-    			<h3>{% if page.parent %}{{ page.parent.title }}{% else %}{{ page.title }}{% endif %}</h3>
-    			<ul>
-    			    {% if page.parent %}
-    			    {% for child in page.parent.children.all %}
-    			    {% ifequal child page %}
-    			    <li class="active"><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
-    			    {% else %}
-    			    <li><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
-    			    {% endifequal %}
-    			    {% endfor %}
-    			    {% else %}
-    			    {% for child in page.children.all %}
-    			    {% ifequal child page %}
-    			    <li class="active"><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
-    			    {% else %}
-    			    <li><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
-    			    {% endifequal %}
-    			    {% endfor %}
-    			    {% endif %}
-    			</ul>
-    		</div>
-    		<div class="sub-nav-btm">&nbsp;</div>
-    	</div>	
+      <div class="sub-nav">
+        <div class="sub-nav-top">&nbsp;</div>
+        <div class="sub-nav-cnt">
+          {% ifnotequal page.parent.children.count 1 %}
+          <h3>{% if page.parent %}{{ page.parent.title }}{% else %}{{ page.title }}{% endif %}</h3>
+          <ul>
+              {% if page.parent %}
+              {% for child in page.parent.children.all %}
+              {% ifequal child page %}
+              <li class="active"><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
+              {% else %}
+              <li><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
+              {% endifequal %}
+              {% endfor %}
+              {% else %}
+              {% for child in page.children.all %}
+              {% ifequal child page %}
+              <li class="active"><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
+              {% else %}
+              <li><a href="{{ child.get_absolute_url }}">{{ child.title }}</a></li>
+              {% endifequal %}
+              {% endfor %}
+              {% endif %}
+          </ul>
+          {% endif %}
+        </div>
+        <div class="sub-nav-btm">&nbsp;</div>
       </div>
-      
+      </div>
+
     </div>
   </div>
 {% endblock %}
