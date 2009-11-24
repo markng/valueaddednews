@@ -15,7 +15,6 @@
       <div class="sub-nav">
         <div class="sub-nav-top">&nbsp;</div>
         <div class="sub-nav-cnt">
-          {% ifnotequal page.parent.children.count 1 %}
           <h3>{% if page.parent %}{{ page.parent.title }}{% else %}{{ page.title }}{% endif %}</h3>
           <ul>
               {% if page.parent %}
@@ -36,7 +35,6 @@
               {% endfor %}
               {% endif %}
           </ul>
-          {% endifnotequal %}
         </div>
         <div class="sub-nav-btm">&nbsp;</div>
       </div>

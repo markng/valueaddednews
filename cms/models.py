@@ -4,6 +4,7 @@ import reversion
 TEMPLATE_CHOICES = (
     ('cms/standard.html', 'Standard Page'),
     ('cms/category.html', 'Category Page'),
+    ('cms/standalone-standard.html', 'Standard Page - standalone'),
 )
 
 class Page(models.Model):
@@ -14,15 +15,15 @@ class Page(models.Model):
     content = models.TextField(null=True, blank=True)
     published = models.BooleanField(default=False)
     parent = models.ForeignKey('self', null=True, blank=True, related_name='children')
-    
+
     def __unicode__(self):
         """unicode repr"""
         return "%s : ( %s )" % (self.title, self.slug)
-    
+
     def get_absolute_url(self):
         """docstring for get_absolute_url"""
         return '/%s' % (self.slug)
-    
+
     def get_ancestors(self, ancestors=None, reverse=True):
         """get a list of ancestor pages"""
         if not ancestors:
@@ -40,7 +41,7 @@ class Block(models.Model):
     name = models.CharField(max_length=255)
     content = models.TextField(null=True, blank=True)
     page = models.ForeignKey(Page, related_name='blocks', blank=True)
-    
+
     def __unicode__(self):
         """string repr"""
         return self.name
@@ -53,7 +54,7 @@ class Image(models.Model):
     name = models.CharField(max_length=255, unique=True)
     caption = models.TextField()
     image = models.ImageField(upload_to='images')
-    
+
     def __unicode__(self):
         """string repr"""
         return self.name
