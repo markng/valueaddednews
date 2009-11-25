@@ -15,20 +15,24 @@ def showpage(request, path='', template_name=None):
             template_name = 'cms/standard.html'
     responsed = {}
     responsed['page'] = page
-    
+
     if page.parent:
         # is a child of something
         responsed['parent'] = page.parent
+        responsed['toptitle'] = page.parent.title
         responsed['siblings'] = page.parent.children.all()
+    else:
+        # parent or standalone
+        responsed['toptitle'] = page.title
     responsed['children'] = page.children.all()
-    
+
     blocks = {}
     for block in page.blocks.all():
         blocks[block.name] = block
     responsed['blocks'] = blocks
-    
+
     return render_to_response(template_name, responsed)
-    
+
 def missingpage(request):
     """404 handler"""
     return render_to_response('404.html')

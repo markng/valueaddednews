@@ -1,92 +1,92 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Value Added News</title>
-	<link rel="stylesheet" type="text/css" href="/css/all.css" />
-	<link rel="stylesheet" type="text/css" href="/css/pygments.css" />
-	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-	<!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="/css/lt7.css" media="screen"/><![endif]-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" type="text/javascript"></script>
-	{% block extrahead %}{% endblock %}
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Value Added News</title>
+  <link rel="stylesheet" type="text/css" href="/css/all.css" />
+  <link rel="stylesheet" type="text/css" href="/css/pygments.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+  <!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="/css/lt7.css" media="screen"/><![endif]-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js" type="text/javascript"></script>
+  {% block extrahead %}{% endblock %}
 </head>
 <body{% block extrabody %}{% endblock %}>
-	<div class="header">
-		<div class="header-cnt">
-			<div class="header-inn">
-				<!-- logo -->
-				<strong class="logo"><a href="{% url home %}">ValueAddedNews</a></strong>
-				<div class="profit">
-					<p>A non-profit initiative OF THE</p>
-					<ul>
-						<li><a href="http://webscience.org/"><img src="/images/logo01.gif" alt="WSRI" /></a></li>
-						<li><a href="http://www.mediastandardstrust.org/"><img src="/images/logo02.gif" alt="Media Standards Trust" /></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="menu">
-		<ul>
-			<li class="active"><a href="{% url home %}">Home</a></li>
-			<li><a href="/benefits">Benefits</a></li>
-			<li><a href="/demo">Demonstration</a></li>
-			<li><a href="/technical">Technical</a></li>
-			<li><a href="/about">About</a></li>
-			<li><a href="/forum">Forum</a></li>
-		</ul>
-	</div>
+  <div class="header">
+    <div class="header-cnt">
+      <div class="header-inn">
+        <!-- logo -->
+        <strong class="logo"><a href="{% url home %}">ValueAddedNews</a></strong>
+        <div class="profit">
+          <p>A non-profit initiative OF THE</p>
+          <ul>
+            <li><a href="http://webscience.org/"><img src="/images/logo01.gif" alt="WSRI" /></a></li>
+            <li><a href="http://www.mediastandardstrust.org/"><img src="/images/logo02.gif" alt="Media Standards Trust" /></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="menu">
+    <ul>
+      <li{% if toptitle %}{% else %} class="active"{% endif %}><a href="{% url home %}">Home</a></li>
+      <li{% ifequal toptitle "Benefits"  %} class="active"{% endifequal %}><a href="/benefits">Benefits</a></li>
+      <li{% ifequal toptitle "Demonstration"  %} class="active"{% endifequal %}><a href="/demo">Demonstration</a></li>
+      <li{% ifequal toptitle "Technical"  %} class="active"{% endifequal %}><a href="/technical">Technical</a></li>
+      <li{% ifequal toptitle "About"  %} class="active"{% endifequal %}><a href="/about">About</a></li>
+      <li{% ifequal toptitle "Forum"  %} class="active"{% endifequal %}><a href="/forum">Forum</a></li>
+    </ul>
+  </div>
     {% block breadcrumbs %}{% endblock %}
   {% block content %}
-    
+
   {% endblock %}
-	<div class="links">
-		<ul>
-			<li>
-				Benefits
-				<ul>
-					<li><a href="/benefits/search">Value Added Search</a></li>
-					<li><a href="/benefits/propercredit">Proper credit</a></li>
-					<li><a href="/benefits/protectcontent">Protect content</a></li>
-					<li><a href="/benefits/transparentprinciples">Transparent principles</a></li>
-					<li><a href="/benefits/unlockarchive">Unlock archive</a></li>
-				</ul>
-			</li>
-			<li>
-				Demonstration
-				<ul>
-					<li><a href="/images/slideshow.html">Watch Demonstration</a></li>
-				</ul>
-			</li>
-			<li>
-				Technical
-				<ul>
-					<li><a href="/howto">How To</a></li>
-					<li><a href="/technical/techspec">Technical Specification</a></li>
-					<li><a href="/technical/api">API</a></li>
-					<li><a href="/technical/valueaddedlabels">Value Added Labels</a></li>
-				</ul>
-			</li>
-			<li>
-				About
-				<ul>
-					<li><a href="/about/background">Background</a></li>
-					<li><a href="/about/funding">Funding</a></li>
-					<li><a href="/about/press">News &amp; Press</a></li>
-					<li><a href="/about/contact">Contact Us</a></li>
-				</ul>
-			</li>
-		</ul>
-	</div>
-	<!-- footer -->
-	<div class="footer">
-		<ul>
-			<li>&copy;2007 Media Standards Trust</li>
-			<li><a href="/privacy-policy">Privacy Policy</a></li>
-			<li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
-		</ul>
-	</div>
-	<script type="text/javascript">
+  <div class="links">
+    <ul>
+      <li>
+        Benefits
+        <ul>
+          <li><a href="/benefits/search">Value Added Search</a></li>
+          <li><a href="/benefits/propercredit">Proper credit</a></li>
+          <li><a href="/benefits/protectcontent">Protect content</a></li>
+          <li><a href="/benefits/transparentprinciples">Transparent principles</a></li>
+          <li><a href="/benefits/unlockarchive">Unlock archive</a></li>
+        </ul>
+      </li>
+      <li>
+        Demonstration
+        <ul>
+          <li><a href="/images/slideshow.html">Watch Demonstration</a></li>
+        </ul>
+      </li>
+      <li>
+        Technical
+        <ul>
+          <li><a href="/howto">How To</a></li>
+          <li><a href="/technical/techspec">Technical Specification</a></li>
+          <li><a href="/technical/api">API</a></li>
+          <li><a href="/technical/valueaddedlabels">Value Added Labels</a></li>
+        </ul>
+      </li>
+      <li>
+        About
+        <ul>
+          <li><a href="/about/background">Background</a></li>
+          <li><a href="/about/funding">Funding</a></li>
+          <li><a href="/about/press">News &amp; Press</a></li>
+          <li><a href="/about/contact">Contact Us</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- footer -->
+  <div class="footer">
+    <ul>
+      <li>&copy;2007 Media Standards Trust</li>
+      <li><a href="/privacy-policy">Privacy Policy</a></li>
+      <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+    </ul>
+  </div>
+  <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
     </script>
