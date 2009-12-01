@@ -10,3 +10,11 @@ def list(request):
         'messages' : parsed.entries,
     }
     return render_to_response('groups/list.html', totemplate)
+
+def homepage(request):
+    """show homepage, include delicious links"""
+    parsed = feedparser.parse('http://feeds.delicious.com/v2/rss/markng/hnews?count=15')
+    totemplate = {
+        'entries' : parsed.entries,
+    }
+    return render_to_response('index.html', totemplate)
